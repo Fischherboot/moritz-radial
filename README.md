@@ -1,9 +1,7 @@
 🍰 RADIALES KUCHEN-MENÜ (FiveM ESX)
 ===========================
-
-Ein stylisches, rundes Radial-Menü für NEUBERG RP – aufgebaut wie ein Kuchen mit 16 Stückchen.
-Einfach konfigurierbar, ESX-kompatibel, kein Maus-Locking, Commands per Enter.
 ![Radial Menu Preview](https://raw.githubusercontent.com/Fischherboot/moritz-radial/main/image.png)
+
 🚀 FEATURES
 ===========================
 • 16 Kuchenstücke – frei benennbar & einzeln deaktivierbar
@@ -30,7 +28,7 @@ ESC/BS  | Menü schließen
 '
 ⚙️ INSTALLATION
 ===========================
-
+```lua
 1) Ordner anlegen:
 resources/
 └── moritz-radial/
@@ -46,10 +44,12 @@ resources/
 3) In die server.cfg:
 
 ensure moritz-radial
-
+```
 
 🔧 CONFIG (config.lua)
 ===========================
+
+```lua
 Config = {}
 
 Config.UseESXNotify = true -- ESX Notification nutzen? (true/false)
@@ -73,7 +73,7 @@ Config.Slots = {
     { label = "Perso",        command = "idcard",     enabled = false },
     { label = "Sonstiges",    command = "misc",       enabled = false },
 }
-
+```
 ⚠️ HINWEIS:
 IMMER 16 SLOTS BEHALTEN! Nur label, command & enabled ändern.
 
