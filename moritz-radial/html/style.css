@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: transparent;
+}
+
+/* Overlay in der Mitte, klickt nicht in die Maus rein */
+#overlay {
+    position: fixed;
+    inset: 0;
+    display: none; /* JS macht flex draus */
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+#radial-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+/* Grundkuchen: Farben kommen per JS als conic-gradient */
+#radial-background {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+}
+
+/* inneres Loch */
+#radial-background::after {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+}
+
+/* Highlight des aktuellen Stücks (weißer "Rahmen" als heller Slice) */
+#selection-overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    background: transparent;
+}
+
+/* Center-Image in der Mitte */
+#center-image-wrapper {
+    position: absolute;
+    inset: 32%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#center-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Labels */
+#labels-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.slice-label {
+    position: absolute;
+    font-size: 14px;
+    text-shadow: 0 0 4px rgba(0,0,0,0.8);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.slice-label span {
+    display: block;
+    color: white; /* default */
+}
+
+/* aktuell ausgewähltes Stück -> schwarzer Text */
+.slice-label.selected span {
+    color: black;
+}
+
+/* disabled bleibt grau, auch wenn selected */
+.slice-label.disabled span {
+    color: rgba(200, 200, 200, 0.6);
+}
+
+/* Ecke unten rechts */
+#corner-text {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    color: white;
+    font-size: 12px;
+    text-shadow: 0 0 4px rgba(0,0,0,0.8);
+}
