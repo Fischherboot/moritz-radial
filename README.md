@@ -31,7 +31,7 @@ ESC/BS  | Menü schließen
 ===========================
 1) Ordner anlegen:
 resources/
-└── rln_radialmenu/
+└── moritz-radial/
     ├── fxmanifest.lua
     ├── client.lua
     ├── config.lua
