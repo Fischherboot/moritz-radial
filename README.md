@@ -20,7 +20,7 @@ Einfach konfigurierbar, ESX-kompatibel, kein Maus-Locking, Commands per Enter.
 
 🎮 STEUERUNG
 ===========================
-'
+
 Taste   | Funktion
 --------|---------------------------
 O       | Menü öffnen/schließen
@@ -30,7 +30,7 @@ ESC/BS  | Menü schließen
 '
 ⚙️ INSTALLATION
 ===========================
-'
+
 1) Ordner anlegen:
 resources/
 └── moritz-radial/
@@ -43,9 +43,11 @@ resources/
         ├── script.js
         └── img.png (dein Logo, 800x800)
 
-2) In die server.cfg:
+3) In die server.cfg:
+
 ensure moritz-radial
-'
+
+
 🔧 CONFIG (config.lua)
 ===========================
 Config = {}
