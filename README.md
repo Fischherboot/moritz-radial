@@ -25,7 +25,6 @@ O       | Menü öffnen/schließen
 ← →     | Kuchenstück auswählen
 Enter   | Command ausführen / Fehlermeldung
 ESC/BS  | Menü schließen
-'
 
 ⚙️ INSTALLATION
 ===========================
