@@ -7,10 +7,15 @@ Einfach konfigurierbar, ESX-kompatibel, kein Maus-Locking, Commands per Enter.
 🚀 FEATURES
 ===========================
 • 16 Kuchenstücke – frei benennbar & einzeln deaktivierbar
+
 • Deaktivierte Stücke bleiben Grau & blockiert
+
 • Führt definierte Commands aus (z. B. /ad)
+
 • Kein NUI-Fokus → Spieler kann sich weiter bewegen
+
 • ESX-Notify Support
+
 • Logo/PNG (800x800) in der Mitte
 
 🎮 STEUERUNG
