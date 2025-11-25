@@ -26,6 +26,7 @@ O       | Menü öffnen/schließen
 Enter   | Command ausführen / Fehlermeldung
 ESC/BS  | Menü schließen
 '
+
 ⚙️ INSTALLATION
 ===========================
 ```lua
