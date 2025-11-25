@@ -20,15 +20,17 @@ Einfach konfigurierbar, ESX-kompatibel, kein Maus-Locking, Commands per Enter.
 
 🎮 STEUERUNG
 ===========================
+'
 Taste   | Funktion
 --------|---------------------------
 O       | Menü öffnen/schließen
 ← →     | Kuchenstück auswählen
 Enter   | Command ausführen / Fehlermeldung
 ESC/BS  | Menü schließen
-
+'
 ⚙️ INSTALLATION
 ===========================
+'
 1) Ordner anlegen:
 resources/
 └── moritz-radial/
@@ -43,7 +45,7 @@ resources/
 
 2) In die server.cfg:
 ensure moritz-radial
-
+'
 🔧 CONFIG (config.lua)
 ===========================
 Config = {}
